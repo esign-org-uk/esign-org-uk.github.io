@@ -14,10 +14,19 @@
 		<ul>
 			<li><a href="https://github.com/esig-org-uk/docusign-powerform-download">docusign-powerform-download</a></li>
 		</ul>
-		<p>Open a command prompt and issue the following command (replacing the angle-bracketed values as appropriate:</p>
+		<p>Open a command prompt and issue the following command (replacing the angle-bracketed values as appropriate):</p>
         <pre>
             <code>
-                java -jar docusign-powerform-download-<version>.jar <accountId> <userId> <outputDirectory>
+                java -jar docusign-powerform-download-&lt;version&gt;.jar &lt;accountId&gt; &lt;userId&gt; &lt;outputDirectory&gt;
+            </code>
+        </pre>
+        <p>Assuming that you have entered the correct details, you should see output similar to:</p>
+        <pre>
+            <code>
+                Successfully authenticated to DocuSign
+                ======================================
+                &lt;n&gt; PowerForm(s) found in accountId ...
+                PowerForm '&lt;powerFormName&gt;' written to &lt;powerFormId&gt;.json
             </code>
         </pre>
 	</body>
