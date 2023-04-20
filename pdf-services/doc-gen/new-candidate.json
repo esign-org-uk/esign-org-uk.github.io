@@ -1,0 +1,57 @@
+{
+    "company": {
+        "logo": "data:image/jpeg;base64,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",
+        "name": "Adobe Systems Europe Limited"
+    },
+    "office": {
+        "street": "White Collar Factory, 1 Old Street Yard",
+        "town": "London",
+        "county": "",
+        "postcode": "EC1Y 8AF",
+        "country": "United Kingdom",
+        "phone": "+44 1628 590 000"
+    },
+    "employee": {
+        "firstName": "Jo",
+        "lastName": "Smith",
+        "street": "17 Avenue Road",
+        "town": "Y Fenni",
+        "county": "Sir Fynwy",
+        "postcode": "NP7 7DA",
+        "country": "Cymru"
+    },
+    "employmentTerms": {
+        "contractDate": "01 January 2023",
+        "startDate": "1st February 2023",
+        "jobTitle": "Technical Consultant",
+        "reportToRole": "Senior Delivery Manager",
+        "reportToName": "Jamie O'Malley",
+        "annualSalary": "£20,000",
+        "totalCompensation": "£22,000",
+        "vacationDays": "30",
+        "vacationRate": "2.5"
+    },
+    "employmentBenefits": [
+        {
+            "benefit": "Adobe Group Personal Pension Plan"
+        },
+        {
+            "benefit": "Health care"
+        },
+        {
+            "benefit": "Physical wellbeing"
+        },
+        {
+            "benefit": "LifeDojo"
+        },
+        {
+            "benefit": "Emotional and mental wellbeing"
+        },
+        {
+            "benefit": "Wellness reimbursement programme"
+        },
+        {
+            "benefit": "Income protection scheme"
+        }
+    ]
+}
