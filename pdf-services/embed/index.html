@@ -1,22 +1,35 @@
 <html>
-<head>
-  <title>Embed Hackathon</title>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
-</head>
-<body>
-  <div id="adobe-dc-view"></div>
-  <script type="text/javascript">
-   document.addEventListener("adobe_dc_view_sdk.ready", function()
-   {
-      var adobeDCView = new AdobeDC.View({clientId: "00de752d3e2f4b40bdeb84fd572e1a26", divId: "adobe-dc-view"});
-      adobeDCView.previewFile(
-     {
-         content:  {location: {url: "https://www.e-sign.org.uk/pdf-services/embed/pdf-hackathon.pdf"}},
-         metaData: {fileName: "pdf-hackathon.pdf"}
-     });
-   });
-  </script>
-</body>
+    <head>
+        <title>Embed Hackathon</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    </head>
+    <body>
+        <div id="adobe-dc-view"></div>
+        <script type="text/javascript">
+            document.addEventListener("adobe_dc_view_sdk.ready", function()
+                {
+                    var adobeDCView = new AdobeDC.View(
+                        {
+                            clientId: "00de752d3e2f4b40bdeb84fd572e1a26",
+                            divId: "adobe-dc-view"
+                        }
+                    );
+                    adobeDCView.previewFile(
+                        {
+                            content: {
+                                location: {
+                                    url: "https://www.e-sign.org.uk/pdf-services/embed/pdf-hackathon.pdf"
+                                }
+                            },
+                            metaData: {
+                                fileName: "pdf-hackathon.pdf"
+                            }
+                        }
+                    );
+                }
+            );
+        </script>
+    </body>
 </html>
