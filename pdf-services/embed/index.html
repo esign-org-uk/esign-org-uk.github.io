@@ -4,6 +4,15 @@
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+        <style>
+            body {
+                background-color: #ddd;
+            }
+            #adobe-dc-view {
+                margin: 30px auto 10px;
+                width: 1200px;
+            }
+        </style>
     </head>
     <body>
         <div id="adobe-dc-view"></div>
@@ -26,6 +35,10 @@
                             metaData: {
                                 fileName: "pdf-hackathon.pdf"
                             }
+                        },
+                        {
+                            embedMode: "SIZED_CONTAINER",
+                            showFullScreen: true
                         }
                     );
                 }
