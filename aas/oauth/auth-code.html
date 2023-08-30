@@ -6,8 +6,8 @@
 	</head>
 	<body>
 		<h1>e-sign.org.uk</h1>
-		<p>OAuth Consent has been provided!</p>
-		<p>This page has been passed an authorization code from the Adobe Acrobat Sign platform.</p>
+		<p>As long as no error is reported in the address bar, OAuth consent has been provided!</p>
+		<p>If so, this page will have been passed an authorization code from the Adobe Acrobat Sign platform.</p>
 		<p>Using this authorization code, the application can generate access &amp; refresh tokens for use via the REST API.</p>
 		<form action="https://api.adobesign.com/oauth/v2/token" method="post">
 			<label for="client_id">client_id</label>
@@ -25,7 +25,7 @@
 			<label for="code">code</label>
 			<input type="text" id="code" name="code"/>
 			<br/>
-			<input type="submit" value="Get OAuth Tokens"/>
+			<input type="submit" value="Click on this button to Get Access & Refresh Tokens"/>
 		</form>
 		<script>
 			const urlParams = new URLSearchParams(window.location.search);
