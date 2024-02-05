@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="/css/base.css" type="text/css" />
+		<title>e-sign.org.uk</title>
+	</head>
+	<body>
+		<h1>e-sign.org.uk</h1>
+		<div id="failure">
+			<p>An error has occured during the OAuth consent process, see below.</p>
+			<form>
+				<fieldset>
+					<legend>Error Description</legend>
+					<label for="error">Error</label>
+					<input style="width: 800px;" type="text" id="error" name="error"/>
+				</fieldset>
+			</form>
+		</div>
+		<div id="success">
+			<p>OAuth consent has been provided!</p>
+			<p>This page has been passed an authorization code from the Adobe Acrobat Sign platform.</p>
+			<p>Using this authorization code, the application can generate access &amp; refresh tokens for use via the REST API.</p>
+			<p>Typically, an integrating system would show a page of its choosing at this point, and obtain the access &amp; refresh tokens in the background. However, to illustrate the information that is retrievable with the authorization code, you can click on the button below to observe the information made available by the Adobe Acrobat Sign platform.</p>
+			<form action="https://api.adobesign.com/oauth/v2/token" method="post">
+				<fieldset>
+					<legend>Token Generation</legend>
+					<label for="client_id">client_id</label>
+					<input type="password" value="CBJCHBCAABAAn34DrrUFGqXL8TN2udFwHF41VUkSOY9R" readonly="true" id="client_id" name="client_id"/>
+					<br/>
+					<label for="client_secret">client_secret</label>
+					<input type="password" value="KFh985Opk7S2UohgLink7OP28Ww_6hBy" readonly="true" id="client_secret" name="client_secret"/>
+					<br/>
+					<label for="grant_type">grant_type</label>
+					<input type="text" value="authorization_code" readonly="true" id="grant_type" name="grant_type"/>
+					<br/>
+					<label for="redirect_uri">redirect_uri</label>
+					<input type="text" value="https://www.e-sign.org.uk/aas/oauth/auth-code.html" readonly="true" id="redirect_uri" name="redirect_uri"/>
+					<br/>
+					<label for="code">code</label>
+					<input type="text" id="code" name="code"/>
+					<br/>
+					<input type="submit" value="Click on this button to Get Access & Refresh Tokens"/>
+				</fieldset>
+			</form>
+		</div>
+		<script>
+			const urlParams = new URLSearchParams(window.location.search);
+			if (urlParams.has("code")) {
+				const codeParam = urlParams.get("code");
+				document.getElementById('failure').style.display = "none";
+				document.getElementById('success').style.display = "block";
+				document.getElementById('code').value = codeParam;
+			}
+			else {
+				const errorParam = urlParams.get("error_description");
+				document.getElementById('failure').style.display = "block";
+				document.getElementById('success').style.display = "none";
+				document.getElementById('error').value = errorParam;
+			}
+		</script>
+	</body>
+</html>
