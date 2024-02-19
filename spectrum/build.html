@@ -9,8 +9,8 @@
 		<h1>Spectrum</h1>
 		<sp-theme scale="large" color="dark">
 			<sp-accordion>
-				<sp-accordion-item id="connect" open label="Connect to Adobe Acrobat Sign">
-					<sp-button autofocus onclick="document.getElementById('render').open=true;">Authorize</sp-button>
+				<sp-accordion-item id="connect" open=true label="Connect to Adobe Acrobat Sign">
+					<sp-button autofocus onclick="document.getElementById('render').disabled=false; document.getElementById('render').open=true;">Authorize</sp-button>
 				</sp-accordion-item>
 				<sp-accordion-item id="render" disabled label="Create PDF Rendition">
 					<p>PDF Rendition</p>
