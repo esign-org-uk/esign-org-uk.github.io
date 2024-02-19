@@ -9,13 +9,13 @@
 		<h1>Spectrum</h1>
 		<sp-theme scale="large" color="dark">
 			<sp-accordion>
-				<sp-accordion-item open label="Connect to Adobe Acrobat Sign">
-					<sp-button autofocus>Authorize</sp-button>
+				<sp-accordion-item id="connect" open label="Connect to Adobe Acrobat Sign">
+					<sp-button autofocus onclick="document.getElementById('render').open=true;">Authorize</sp-button>
 				</sp-accordion-item>
-				<sp-accordion-item disabled label="Create PDF Rendition">
+				<sp-accordion-item id="render" disabled label="Create PDF Rendition">
 					<p>PDF Rendition</p>
 				</sp-accordion-item>
-				<sp-accordion-item disabled label="Create Draft Agreement">
+				<sp-accordion-item id="agreement" disabled label="Create Draft Agreement">
 					<sp-button>Click to launch authoring view</sp-button>
 				</sp-accordion-item>
 			</sp-accordion>
