@@ -7,7 +7,17 @@
 	<body>
 		<h1>Spectrum</h1>
 		<sp-theme scale="large" color="dark">
-			<sp-button onclick="alert('I was clicked');">Click me!</sp-button>
+			<sp-accordion>
+				<sp-accordion-item label="Connect to Acrobat Sign">
+					<sp-button>Click to launch OAuth</sp-button>
+				</sp-accordion-item>
+				<sp-accordion-item label="Create PDF Rendition">
+					<p>PDF Rendition</p>
+				</sp-accordion-item>
+				<sp-accordion-item label="Create Draft Agreement">
+					<sp-button>Click to launch authoring view</sp-button>
+				</sp-accordion-item>
+			</sp-accordion>
 		</sp-theme>
 	</body>
 </html>
