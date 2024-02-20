@@ -24,7 +24,7 @@
 						<sp-menu-item value="currentPage">Current Page</sp-menu-item>
 						<sp-menu-item value="entireDocument">Whole Document</sp-menu-item>
 					</sp-picker>
-					<sp-button>Render</sp-button>
+					<sp-button onclick="document.getElementById('agreement').disabled=false; document.getElementById('agreement').open=true;">Render</sp-button>
 				</sp-accordion-item>
 				<sp-accordion-item id="agreement" disabled label="Create Draft Agreement">
 					<sp-button>Click to launch authoring view</sp-button>
