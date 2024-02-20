@@ -19,7 +19,12 @@
 					<sp-button autofocus onclick="document.getElementById('render').disabled=false; document.getElementById('render').open=true;">Authorize</sp-button>
 				</sp-accordion-item>
 				<sp-accordion-item id="render" disabled label="Create PDF Rendition">
-					<p>PDF Rendition</p>
+					<sp-field-label for="range" size="m">Page(s)</sp-field-label>
+					<sp-picker name="range" id="range" value="currentPage">
+						<sp-menu-item value="currentPage">Current Page</sp-menu-item>
+						<sp-menu-item value="entireDocument">Whole Document</sp-menu-item>
+					</sp-picker>
+					<sp-button>Render</sp-button>
 				</sp-accordion-item>
 				<sp-accordion-item id="agreement" disabled label="Create Draft Agreement">
 					<sp-button>Click to launch authoring view</sp-button>
