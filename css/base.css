@@ -1,4 +1,6 @@
 a { border-bottom: 1px dotted #33a; color: #33a; text-decoration: none; }
+a.logo { border: 0; text-decoration: none; }
+a.logo img { border-radius: 50%; }
 body { background-color: #eee; color: #333; font: 14px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; line-height: 2.0em; padding: 10px 5% 0; }
 code { background-color: #584ccc; color: #fff; border-radius: 10px; padding: 5px 10px; }
 form label { display: inline-block; width: 200px; }
