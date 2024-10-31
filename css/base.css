@@ -5,7 +5,7 @@ body { background-color: #eee; color: #333; font: 14px "Lucida Grande","Lucida S
 code { background-color: #584ccc; color: #fff; border-radius: 10px; padding: 5px 10px; }
 form label { display: inline-block; width: 200px; }
 form input { width: 400px; }
-form input[type=submit] { background-color: #f00; color: #fff; }
+form input[type=submit] { background-color: #584ccc; color: #fff; }
 h2 { padding-top: 40px; }
 img { padding: 20px 0px; }
 table { border: 1px solid #fff; margin: 20px 0 20px 40px; }
